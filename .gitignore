@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory (nyc, jest, etc.)
+coverage/
+*.lcov
+
+# Build / dist files
+dist/
+build/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables
+.env
+.env.test
+.env.production
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+
+# Debug
+*.tgz
+
+# dotenv environment variables
+config.env
+.env
