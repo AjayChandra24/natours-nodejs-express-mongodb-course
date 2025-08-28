@@ -103,7 +103,7 @@ userSchema.methods.createPasswordResetToken = function() {
   const resetToken = crypto.randomBytes(32).toString('hex'); // Generate random token
   this.passwordResetToken = crypto.createHash('sha256').update(resetToken).digest('hex'); // Hash the token before saving to DB
   this.passwordResetExpires = Date.now() + 10 * 60 * 1000; // Token valid for 10 minutes
-  console.log({resetToken}, this.passwordResetToken);
+  // console.log({resetToken}, this.passwordResetToken);
   return resetToken; // Return the plain token to send to user
 };
 
